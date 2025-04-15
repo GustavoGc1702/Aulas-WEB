@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+/* Contêiner para posicionar as imagens */
+div {
+    position: relative;  /* Importante para posicionar a imagem do astronauta */
+    display: flex;       /* Flexbox permite um layout flexível */
+    justify-content: center; /* Centraliza a imagem do astronauta horizontalmente */
+    align-items: center;    /* Centraliza a imagem do astronauta verticalmente */
+    width: 100vw;          /* O contêiner ocupa toda a largura da tela */
+    height: 100vh;         /* O contêiner ocupa toda a altura da tela */
+  }
+  
+  #espaco {
+    width: 100%;     /* A imagem do espaço ocupa 100% da largura do contêiner */
+    height: 100%;    /* A imagem do espaço ocupa 100% da altura do contêiner */
+    object-fit: cover; /* A imagem do espaço preenche completamente o contêiner, sem distorcer */
+  }
+  
+  #astronauta {
+    position: absolute;  /* Permite que a imagem do astronauta seja posicionada sobre a imagem do espaço */
+    width: 15%;           /* Ajuste o tamanho da imagem do astronauta, se necessário */
+    object-fit: contain;  /* Mantém a proporção da imagem do astronauta */
+    z-index: 10;          /* Garante que a imagem do astronauta fique acima da imagem do espaço */
+  }
+  

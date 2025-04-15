@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #53607e;
+}
+
+.h1{
+    color: #052436;
+}
+
+.imagem{
+    background-color: #052436;
+}
+.paragrafo{
+    color: #f6f6f6;
+}
+
+strong{
+    color: #f6f6f6;
+}
+
+.inicio{
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.inicio_filho{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.inicio_botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    background-color: #22D4FD;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #000;
+}
