@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.3rem;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td,th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.cnome{
+            background-color: aqua;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <h1>Exercicio de Tabelas</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+        
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>João Pedro</td>
+            <td>M</td>
+            <td>32</td>
+            <td>Engenheiro</td>
+        </tr>
+
+        <tr>
+            <td>Mariana Souza</td>
+            <td>F</td>
+            <td>28</td>
+            <td>Designer</td>
+        </tr>
+
+        <tr>
+            <td>Lucas Almeida</td>
+            <td>M</td>
+            <td>40</td>
+            <td>Médico</td>
+        </tr>
+
+        <tr>
+            <td>Beatriz Lima</td>
+            <td>F</td>
+            <td>22</td>
+            <td>Estudante</td>
+        </tr>
+
+        <tr>
+            <td>Yasmin Rocha</td>
+            <td>F</td>
+            <td>26</td>
+            <td>Ilustradora</td>
+        </tr>
+        
+        <tr>
+            <td>Renato Silveira</td>
+            <td>M</td>
+            <td>52</td>
+            <td>Apicultor</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
