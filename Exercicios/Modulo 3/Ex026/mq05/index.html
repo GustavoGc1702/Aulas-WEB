@@ -7,15 +7,13 @@
     <title>Media Query</title>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media_query.css">
 
 
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu site</h1>
         <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
@@ -52,8 +50,6 @@
                 Quasi illo est doloribus ex perspiciatis, nihil distinctio impedit harum, aspernatur eveniet porro. Ab
                 est id excepturi in aliquid recusandae ullam.</p>
 
-
-
         </article>
     </main>
 
@@ -65,7 +61,15 @@
             } else {
                 itensMenu.style.display = 'block'
             }
+        }
 
+        function mudouTamanho() {
+
+            if (window.innerWidth >= 768) {
+                itensMenu.style.display = 'block'
+            }else {
+                itensMenu.style.display = 'none'
+            }
             
         }
     </script>
