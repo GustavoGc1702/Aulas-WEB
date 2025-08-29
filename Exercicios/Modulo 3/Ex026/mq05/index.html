@@ -18,8 +18,8 @@
 <body>
     <header>
         <h1>Meu site</h1>
-        <span id="burguer" class="material-icons">menu</span>
-        <menu>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itensMenu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -56,6 +56,19 @@
 
         </article>
     </main>
+
+    <script>
+
+        function clickMenu(){
+            if (itensMenu.style.display == 'block') {
+                itensMenu.style.display = 'none' 
+            } else {
+                itensMenu.style.display = 'block'
+            }
+
+            
+        }
+    </script>
 
 </body>
 
