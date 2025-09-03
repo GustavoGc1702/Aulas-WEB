@@ -9,7 +9,7 @@
 
 
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "poppins", sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -56,9 +56,26 @@ section#screen_login > div#formulario {
     padding: 10px;
 }
 
-form > input{
+.campo{
     display: inline-block;
-    background-color: purple;
-    padding: 10px;
+    margin-bottom: 5px;
+}
 
+.campo input{
+    width: 80%;
+    border: 1px solid #ccc ;
+    border-radius: 5px;
+}
+
+.campo label{
+    color: rgb(62, 62, 253);    
+}
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8rem;
 }

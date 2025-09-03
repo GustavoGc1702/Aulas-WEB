@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css" media="all">
     <link rel="stylesheet" href="estilos/media_query.css" media="screen">
 
@@ -14,7 +16,7 @@
 <body>
 
     <main>
-        
+
         <section id="screen_login">
 
             <div id="imagem">
@@ -27,19 +29,27 @@
                 </p>
 
                 <form action="login.php" method="post" autocomplete="on">
-                    <p>
-                        <label for="iusuario">Usuario: </label>
-                        <input type="email" name="usuario" id="iusuario">
-                    </p>
-                    <p>
-                        <label for="isenha">Senha:</label>
-                        <input type="password" name="senha" id="isenha">
-                    </p>
+
+                    <div class="campo">
+                        
+                        <label for="iusuario"><i class="material-icons">person</i></label>
+
+                        <input type="email" name="usuario" id="iusuario" placeholder="Seu e-mail" autocomplete="email">
+                    </div>
+
+                    <div class="campo">
+                        
+                        <label for="isenha"><i class="material-icons">vpn_key</i></label>
+                        
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                    </div>
+
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha
+                    </a>
+
                 </form>
-                <div id="botoes">
-                    <button type="button">Entrar</button>
-                    <button type="button">Esqueci a senha</button>
-                </div>
             </div>
         </section>
 
