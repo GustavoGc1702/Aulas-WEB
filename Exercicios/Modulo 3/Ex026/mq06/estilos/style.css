@@ -35,7 +35,7 @@ section#screen_login {
     transform: translate(-50%,-50%);
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.459) ;
@@ -57,8 +57,13 @@ section#screen_login > div#formulario {
 }
 
 .campo{
-    display: inline-block;
-    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px;
+    background-color: #5f2c82;
+    border-radius: 5px;
+
 }
 
 .campo input{
@@ -68,7 +73,11 @@ section#screen_login > div#formulario {
 }
 
 .campo label{
-    color: rgb(62, 62, 253);    
+    color: black;    
+}
+
+.campo > label > i{
+    color: white;
 }
 
 div#formulario > h1 {
@@ -78,4 +87,30 @@ div#formulario > h1 {
 
 div#formulario > p {
     font-size: 0.8rem;
+}
+
+
+form > input[type=submit]{
+    display: block;
+    font-size: 1rem;
+    width: 100%;
+    height: 40px;
+    background-color: #00c19f;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+
+form > input[type=submit]:hover{
+    background-color: #49a09d;
+    cursor: pointer;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
 }
