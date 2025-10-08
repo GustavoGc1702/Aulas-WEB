@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
     <style>
-        div.conteiner{
+        div.conteiner {
             background-color: lightsalmon;
             display: flex;
-            flex-flow:  row wrap;
+            flex-flow: row wrap;
+            height: 200px;
+            align-items: center;
         }
+
         div.item {
             background-color: lightskyblue;
             border: 1px solid black;
             padding: 20px;
 
         }
-        div#i1{
-            
-        }
-        div#i2{
-            
-        }
-        div#i3{
-            align-self: flex-end;
-        }
-        div#i4{
-            
-        }
-        div#i5{
-            
-        }
-        div#i6{
-            
-        }
-        div#i7{
-            
+
+        div#i1 {
+            order: -4;
         }
 
+        div#i2 {
+            align-self: stretch;
+            order: 8;
+        }
+
+        div#i3 {
+            align-self: self-end;
+        }
+
+        div#i4 {
+            order: 0;
+        }
+
+        div#i5 {
+            align-self: flex-start;
+            order: 4;
+        }
+
+        div#i6 {
+            order: 3;
+        }
+
+        div#i7 {
+            order: 1;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="conteiner">
@@ -49,8 +62,9 @@
         <div class="item" id="i4">D</div>
         <div class="item" id="i5">E</div>
         <div class="item" id="i6">F</div>
-        <div class="item" id="i7">G</div> 
-    </div'
-    
+        <div class="item" id="i7">G</div>
+    </div>
+
 </body>
+
 </html>
