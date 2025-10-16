@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: antiquewhite;
+}
+
+header{
+    background-color: gray;
+}
+
+h1{
+    color: white;
+}
+
+div.opcao{
+    display: flex;
+
+}
+
+div.texto{
+    background-color: white;
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 5px;
+}
