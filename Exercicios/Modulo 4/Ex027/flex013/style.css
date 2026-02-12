@@ -32,7 +32,8 @@ header > h1{
 header > nav{
     border: 1px dotted black;
     display: flex;
-    flex-flow: row wrap ;
+    flex-flow: row wrap
+      ;
 }
 
 nav a {
@@ -57,3 +58,4 @@ main{
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgb(112, 112, 112);
 }
+
